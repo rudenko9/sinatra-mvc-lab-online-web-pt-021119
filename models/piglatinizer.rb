@@ -12,7 +12,7 @@ class PigLatinizer
       else
         word[1..-1] << word[0] + "ay"
       end
-    elsif vowels.include?(word[0]) 
+    elsif vowels.include?(word[0]) && word.size > 1
       word << "way"
     end
   end
