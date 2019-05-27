@@ -14,6 +14,8 @@ class PigLatinizer
       end
     elsif vowels.include?(word[0]) && word.size > 1
       word << "way"
+      elsif vowels.include?(word[0]) && word.size == 1
+      word << "way"
     end
   end
   
