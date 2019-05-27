@@ -4,6 +4,7 @@ class PigLatinizer
   @@all = []
   def initialize(text)
     @text = text.downcase 
+    @@all << self
     end 
   
   def self.new 
